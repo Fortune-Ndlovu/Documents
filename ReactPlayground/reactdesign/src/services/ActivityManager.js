@@ -9,9 +9,9 @@ const ActivityManager = () => {
         try {
             const activitiesCollection = collection(db, "activities");
             const docRef = await addDoc(activitiesCollection, { ...activity });
-            console.log("activity", activity);
-            return docRef
-
+            const createdActivity = { ...activity, id: docRef.id }
+            console.log("createdActivity: ", createdActivity);
+            return createdActivity;
         } catch (e) { 
             console.error("Error adding document: ", e);
         }

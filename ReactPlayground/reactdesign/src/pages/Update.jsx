@@ -1,10 +1,10 @@
 import React from 'react'
 import ActivityManager from '../services/ActivityManager'
 
-const Contact = () => {
+const Update = () => {
   return (
-    <div>Contact<ActivityManager /></div>
+    <div>Update<ActivityManager /></div>
   )
 }
 
-export default Contact
+export default Update

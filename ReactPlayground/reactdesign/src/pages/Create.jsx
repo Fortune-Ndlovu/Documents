@@ -1,13 +1,13 @@
 import React from 'react';
 import ActivityManager from '../services/ActivityManager'
 
-const HomePage = () => {
+const Create = () => {
     return (
       <>
-        <h1>Home</h1>
+        <h1>Create</h1>
       <ActivityManager />
     </>
   )
 }
 
-export default HomePage
+export default Create

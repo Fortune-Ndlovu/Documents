@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Create from './pages/Create';
+import Read from './pages/Read';
+import Update from './pages/Update';
+import Delete from './pages/Delete';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -14,23 +15,30 @@ function App() {
           <Route path='/' element={
             <Fragment>
               <Header/>
-              <Home />
+              <Create />
               <Footer />
             </Fragment>
           } />
 
-          <Route path='/about' element={
+          <Route path='/read/' element={
             <Fragment>
               <Header />
-              <About />
+              <Read />
               <Footer />
             </Fragment>
           } />
 
-          <Route path='/contact' element={
+          <Route path='/update' element={
             <Fragment>
               <Header />
-              <Contact />
+              <Update />
+              <Footer />
+            </Fragment>
+          } />
+            <Route path='/delete' element={
+            <Fragment>
+              <Header />
+              <Delete />
               <Footer />
             </Fragment>
           } />
