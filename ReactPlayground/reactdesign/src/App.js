@@ -5,6 +5,7 @@ import Update from './pages/Update';
 import Delete from './pages/Delete';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ReadActivity from './components/ReadActivity/ReadActivity';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,13 @@ function App() {
             <Fragment>
               <Header />
               <Read />
+              <Footer />
+            </Fragment>
+          } />
+          <Route path='/read/:createdActivityId' element={
+            <Fragment>
+              <Header />
+              <ReadActivity />
               <Footer />
             </Fragment>
           } />
