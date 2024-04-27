@@ -1,8 +1,9 @@
 import React from 'react'
+import ActivityManager from '../services/ActivityManager'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>Contact<ActivityManager /></div>
   )
 }
 
